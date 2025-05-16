@@ -1,0 +1,15 @@
+# Eclipse
+.classpath
+.project
+.settings/
+bin/
+
+# IntelliJ
+.idea/
+*.iml
+out/
+
+# Outros
+*.log
+*.tmp
+*.swp
