@@ -1,24 +1,43 @@
-# 📚 Projeto Demonstração SOLID em Java
+# 🧱 Projeto SOLID em Java - Exemplos Práticos
 
-![Java](https://img.shields.io/badge/Java-17%2B-blue)
-![SOLID](https://img.shields.io/badge/Princípios-SOLID-green)
-![License](https://img.shields.io/badge/License-MIT-lightgrey)
+![Java](https://img.shields.io/badge/Java-17+-blue?logo=java)
+![SOLID](https://img.shields.io/badge/SOLID-Principles-green)
+![Maven](https://img.shields.io/badge/Maven-3.6+-orange?logo=apache-maven)
 
-Projeto de exemplo demonstrando os 5 princípios SOLID com implementações práticas em Java.
+Demonstração prática dos 5 princípios SOLID com implementações em Java puro.
+
+## 📋 Índice
+- [Princípios Implementados](#-princípios-implementados)
+- [Como Executar](#-como-executar)
+- [Estrutura do Projeto](#-estrutura-do-projeto)
+- [Exemplos de Código](#-exemplos-de-código)
+- [Contribuição](#-contribuição)
+- [Licença](#-licença)
 
 ## 🧩 Princípios Implementados
 
-### 1. Single Responsibility Principle (SRP)
-```java
-// Cada classe tem apenas uma responsabilidade
-public class PedidoService {
-    public void processarPedido(Pedido pedido) {
-        // Lógica exclusiva de processamento
-    }
-}
+| Princípio               | Descrição                                                                 |
+|-------------------------|--------------------------------------------------------------------------|
+| **Single Responsibility** | Cada classe com uma única responsabilidade                                |
+| **Open/Closed**          | Aberto para extensão, fechado para modificação                           |
+| **Liskov Substitution**  | Classes derivadas substituíveis por suas classes base                    |
+| **Interface Segregation**| Múltiplas interfaces específicas ao invés de uma geral                   |
+| **Dependency Inversion** | Depender de abstrações, não de implementações                           |
 
-public class EmailService {
-    public void enviarConfirmacao() {
-        // Lógica exclusiva de e-mail
-    }
-}
+## 🚀 Como Executar
+
+### Pré-requisitos
+- JDK 17+
+- Maven 3.6+
+
+### Passo a passo
+```bash
+# 1. Clone o projeto
+git clone https://github.com/seu-usuario/solid-java-example.git
+
+# 2. Navegue até o diretório
+cd solid-java-example
+
+# 3. Compile e execute
+mvn clean install
+mvn exec:java -Dexec.mainClass="solid.Main"
